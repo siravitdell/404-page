@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:ital,wght@0,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+#header{
+    height: 25px;
+    padding-left: 77px;
+    padding-top: 40px;
+}
+
+#header-text {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: black;
+}
+
+.container{
+    width: fit-content;
+    height: calc(100vh - 92px);
+    display: grid;
+    grid-template-columns: 539.22px 1fr;
+    margin:0 auto;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image{
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 447.22px;
+    width: 539.22px;
+}
+
+#text{
+    width: fit-content;
+}
+
+#btext {
+    width: fit-content;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 60px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+#ltext {
+    width: fit-content;
+    margin-top:30px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+}  
+
+#button {
+    background-color: black;
+    border: 0px solid black;
+    width: 216px;
+    height: 68px;
+}
+
+#bttext {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+}
+
+#username {
+    position: absolute;
+    width: 100vw;
+    height: 17px;
+    bottom: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+@media (max-width: 375px){ 
+  
+    #header{
+        padding-left: 30px;
+        padding-top: 25px;
+    }
+    
+    #header-text {
+        font-size: 30px;
+    }
+    
+    .container{
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+
+    #image{
+        height: fit-content; 
+        margin: 50px 0;
+    }
+    
+    img{
+        width: 286px;
+        height: 238px;
+    }
+    
+    #btext {
+        font-size: 40px;
+        width: calc(100vw - 10px);
+        margin: 0 5px;
+    }
+    
+    #ltext {
+        width: calc(100vw - 10px);
+        margin: 40px 5px;
+    }  
+    
+    #button {
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-height: 900px){
+    
+}
